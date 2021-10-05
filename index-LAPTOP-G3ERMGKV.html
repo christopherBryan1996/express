@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <script>
+        fetch('http://localhost:300/')
+        .then((response)=> response.json())
+        .then(json => {
+            console.log(json)
+            $(document).ready(function(){
+            $('h1').text(json)
+       })
+        })
+        
+    </script>
+    <script>
+    </script>
+    <h1></h1>
+</body>
+</html>
